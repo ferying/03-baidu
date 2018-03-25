@@ -1,0 +1,345 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	font: 12px arial;
+	height: 100%;
+}
+
+.m_l_20{
+	margin-left: 20px;
+}
+.m_l_60{
+	margin-left: 60px;
+}
+.wrapper{
+	position: relative;
+	min-width: 810px;
+	min-height: 600px;
+	height: 100%; 
+}
+
+/*头部链接*/
+header{
+	overflow: hidden;
+}
+header nav{
+	width: 495px;
+	float: right;
+	margin-top: 19px;
+}
+header nav ul{
+	width: 100%;
+	overflow: hidden;
+}
+header nav ul > li{
+	list-style: none;
+    float: left;
+}
+header nav ul > li > a{
+	display: inline-block;
+	margin-left: 20px;
+	color: #000;
+	height: 24px;
+    line-height: 24px;
+	font-size: 13px;
+	font-weight: bold;
+}
+header nav ul > li > a:hover{
+	color: #00c;
+}
+header nav a.login,header nav a.set,header nav a.more{
+	font-weight: normal;
+}
+
+/*给 更多产品 链接 设置特殊样式*/
+header nav ul > li > a.more{
+	color: #fff;
+	text-decoration: none;
+	background: #38f;
+	display: inline-block;
+    padding: 0px 5px;
+}
+
+/*设置链接的下拉框*/
+header nav ul ol.set_info{
+	display: none;
+}
+header nav ul > li:hover ol.set_info{
+	display: block;
+}
+header nav ul ol.set_info{
+	list-style: none;
+	position: absolute;
+	top: 43px;
+	*right: 72px;
+	text-align: center;
+	
+	border: 1px solid #d1d1d1;
+	-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+	-moz-box-shadow: 1px 1px 5px #d1d1d1;
+	-ms-box-shadow: 1px 1px 5px #d1d1d1;
+	-o-box-shadow: 1px 1px 5px #d1d1d1;
+	box-shadow: 1px 1px 5px #d1d1d1;
+	behavior: url(ie-css3.htc);
+}
+header nav ul ol.set_info li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	width: 70px;
+	height: 26px;
+	line-height: 26px;
+}
+header nav ul ol.set_info li a:hover{
+	color: #fff;
+	background: #38f;
+}
+
+/*更多产品链接的下拉框*/
+header nav ul ol.more_info{
+	display: none;
+}
+/*隐藏之前的链接*/
+header nav ul > li:hover > a.more{
+	display: none;
+}
+/*显示下拉内容*/
+header nav ul > li:hover ol.more_info{
+	display: block;
+}
+header nav ul ol.more_info{
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 85px;
+	height: 100%;
+	border-left: 1px solid #e7e7e7;
+	background-color: #f9f9f9;
+}
+header nav ul ol.more_info li .more_new{
+	display: block;
+	width: 66px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	margin: 9px auto 0px;
+	border-bottom: #f0f0f0 1px solid;
+
+}
+header nav ul ol.more_info li a{
+	display: block;
+	width: 66px;
+	height: 76px;
+	text-align: center;
+	text-decoration: none;
+	color: #666;
+	border-bottom: #f0f0f0 1px solid;
+	margin: 0 auto;
+	overflow: hidden;/*这里没有此属性设置时，a标签包含的区域看起来不太对，为什么？*/
+	
+}
+/*设置背景图片*/
+header nav ul ol.more_info li a span{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/bdbri_icons.png) no-repeat;
+	cursor: pointer;
+}
+header nav ul ol.more_info li a span.more_item_1{
+	background-position: -72px 0;
+	width: 40px;
+}
+header nav ul ol.more_info li a span.more_item_2{
+	background-position: -112px 0;
+}
+header nav ul ol.more_info li a span.more_item_3{
+	background-position: -36px 0;
+}
+header nav ul ol.more_info li a span.more_item_4{
+	background-position: -146px 0;
+}
+header nav ul ol.more_info li a span.more_item_5{
+	background-position: -184px 0;
+}
+header nav ul ol.more_info li a span.more_item_6{
+	background-position: -220px 0;
+}
+header nav ul ol.more_info li a:hover{
+	text-decoration: underline;
+}
+/*全部产品*/
+header nav ul ol.more_info li a.more_full{
+	text-decoration: underline;
+	margin-top: 15px;
+}
+
+/*主体部分*/
+.content{
+	text-align: center;
+	margin-top: 20px;
+}
+/*百度logo图片*/
+.content img{
+	width: 270px;
+	height: 129px;
+	margin-bottom: 15px;
+}
+.search_form{
+	overflow: hidden;
+	width: 642px;
+	margin: 10px auto;
+}
+/*搜索填写框*/
+.search_form .search_box{
+	position: relative;
+	width: 540px;
+	height: 36px;
+	float: left;
+}
+/*搜索框中的小背景图片*/
+.search_form .search_box .bg_img{
+	display: inline-block;
+	height: 16px;
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 11px;
+    background-color: #ccc;
+    background: url(../img/camera.png) no-repeat;
+    cursor: pointer;
+}
+.search_form .search_box .bg_img:hover{
+	background-position: 0 -20px;
+}
+/*搜索输入框*/
+.search_form .search_box input{
+    /*height: 100%;*/
+    width: 539px;
+    height: 34px;
+    line-height: 34px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #b6b6b6;
+    border-right: 0;
+    text-indent: 8px; /*文本的缩进*/
+
+
+    *margin-left: -8px;  
+    *margin-top: -1px;
+
+}
+.search_form .search_box input:hover{
+	border-color: #999;
+}
+.search_form .search_box input:focus{
+	border-color: #6bd;
+}
+
+
+/*搜索按钮*/
+.search_form button{
+	width: 100px;
+	height: 36px;
+	color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 0;
+    cursor: pointer;
+    float: left;
+}
+.content button:hover{
+	background: #1A6DE8;
+}
+
+/*底部信息*/
+footer .foot_content{
+	margin: 0 auto;
+	/*padding-top: 50px;
+	width: 645px;*/
+	overflow: hidden;
+}
+/*二维码部分*/
+footer .erweima_box{
+	float: left;
+	width: 277px;
+	overflow: hidden;
+}
+footer .erweima{
+	float: left;
+	width: 122px;
+	overflow: hidden;
+}
+
+/*二维码图片*/
+footer .erweima img{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+/*二维码描述信息*/
+footer .erweima_desc{
+	float: left;
+	width: 52px;
+	height: 46px;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+footer .erweima_desc p{
+	line-height: 23px;
+}
+footer .erweima_desc p.desc_code_b{
+	font-weight: bold;
+	color: #666;
+}
+footer .erweima_desc p.desc_code{
+	color: #999;
+}
+
+/*其他信息*/
+footer{
+	position: absolute;
+	bottom: 10px;
+	width: 645px;
+	left: 50%;
+	margin-left: -323px;
+}
+footer .other_info{
+	float: left;
+	/*width: 330px;*/
+    margin-left: 33px;
+}
+footer .other_info p{
+    line-height: 22px;
+    color: #999;
+}
+footer .other_info p a{
+    color: #999;
+}
+footer .f_icon{
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(../img/icons.png) no-repeat;
+}
+footer .f_icon_logo{
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+footer .f_icon_guoh{
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+    margin-right: 6px; 
+}

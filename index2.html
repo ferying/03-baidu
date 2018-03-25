@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index2.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- 顶部链接部分 -->
+		<header>
+			<!-- 左侧链接 -->
+			<div class="top-links">
+				<div class="weather-box">
+					<a href="" class="city-weather">
+						<span class="city-name"> 北京：</span>
+						<i class="weather-icon"></i>
+						<span class="temp">29℃</span>
+						<i class="pollution-name">轻度</i>
+						<span class="pollution-num">128</span>
+						<span class="line">|</span>
+					</a>
+					<div class="weather-info">
+						
+					</div>
+				</div>
+				<div class="other-set">
+					<span class="treasure">宝箱</span>
+					<span class="skin" id="skin-btn">换肤</span>
+					<span class="msg">消息</span>
+				</div>
+			</div>
+			<!-- end 左侧链接 -->
+
+			<!-- 右侧链接 -->
+			<nav>
+				<ul>
+					<li><a href="http://www.nuomi.com/?cid=002540">糯米</a></li>
+					<li><a href="http://news.baidu.com/">新闻</a></li>
+					<li><a href="http://www.hao123.com/">hao123</a></li>
+					<li><a href="http://map.baidu.com/">地图</a></li>
+					<li><a href="http://v.baidu.com/">视频</a></li>
+					<li><a href="http://tieba.baidu.com/">贴吧</a></li>
+					<li class="login-user">
+						<a href="index2.html">风鞍钢</a>
+						<div class="user-info">
+							<i class="arrow"></i>
+							<a href="javascript:;">我的VIP</a>
+							<a href="javascript:;">个人中心</a>
+							<a href="javascript:;">账号设置</a>
+							<a href="javascript:;">意见反馈</a>
+							<a href="javascript:;">退出</a>
+						</div>
+					</li>
+					<li class="set">
+						<a href="JavaScript:;">设置</a>
+						<div class="set-info">
+							<i class="arrow"></i>
+							<a href="javascript:;" class="setpref">搜索设置</a>
+							<a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+							<a href="javascript:;">关闭预测</a>
+							<a href="javascript:;">搜索历史</a>
+						</div>
+					</li>
+					<li class="more">
+						<a href="JavaScript:;">更多产品</a>
+						<div class="more-info">
+							<span class="more-new">更多产品</span>
+							<a href="http://music.baidu.com">
+								<span class="more_item_1"></span>音乐
+							</a>
+							<a href="http://image.baidu.com">
+								<span class="more_item_2"></span>图片
+							</a>
+							<a href="http://zhidao.baidu.com">
+								<span class="more_item_3"></span>知道
+							</a>
+							<a href="http://wenku.baidu.com">
+								<span class="more_item_4"></span>文库
+							</a>
+							<a href="http://top.baidu.com">
+								<span class="more_item_5"></span>风云榜
+							</a>
+							<a href="http://e.baidu.com/?refer=888">
+								<span class="more_item_6"></span>百度推广
+							</a>
+							<a href="//www.baidu.com/more/" class="more_full">全部产品&gt;&gt;</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<!-- end 右侧链接 -->
+		</header>
+		<!-- end header -->
+
+		<!-- 换肤部分 -->
+		<div class="skin-container" style="display:none;">
+			<div class="skin-title" id="skin-title">
+				<span class="active">热门</span>
+				<span>游戏</span>
+				<span>卡通</span>
+				<span>女神降临</span>
+				<span>明星</span>
+				<span>风景</span>
+				<span>简约</span>
+				<span>小清新</span>
+				<!-- <span>自定义</span>
+				<span>最近使用</span> -->
+				<div class="skin-setting">
+					<div class="default" id="skin-default">
+						<i class="icon"></i>
+						<span>不使用皮肤</span>
+					</div>
+					<div class="skin-up" id="skin-up">
+						<i class="icon"></i>
+						<span>收起</span>
+					</div>
+				</div>
+			</div>
+			<div class="skin-list" id="skin-list">
+				<div class="item">
+					<img src="img/805.jpg" alt="">
+					<img src="img/806.jpg" alt="">
+					<img src="img/811.jpg" alt="">
+					<img src="img/807.jpg" alt="">
+					<img src="img/812.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/721.jpg" alt="">
+					<img src="img/724.jpg" alt="">
+					<img src="img/725.jpg" alt="">
+					<img src="img/729.jpg" alt="">
+					<img src="img/722.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/752.jpg" alt="">
+					<img src="img/751.jpg" alt="">
+					<img src="img/760.jpg" alt="">
+					<img src="img/757.jpg" alt="">
+					<img src="img/755.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/439.jpg" alt="">
+					<img src="img/441.jpg" alt="">
+					<img src="img/440.jpg" alt="">
+					<img src="img/448.jpg" alt="">
+					<img src="img/445.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/205.jpg" alt="">
+					<img src="img/202.jpg" alt="">
+					<img src="img/207.jpg" alt="">
+					<img src="img/203.jpg" alt="">
+					<img src="img/200.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/37.jpg" alt="">
+					<img src="img/120.jpg" alt="">
+					<img src="img/5.jpg" alt="">
+					<img src="img/54.jpg" alt="">
+					<img src="img/62.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/53.jpg" alt="">
+					<img src="img/14.jpg" alt="">
+					<img src="img/21.jpg" alt="">
+					<img src="img/33.jpg" alt="">
+					<img src="img/2.jpg" alt="">
+				</div>
+				<div class="item" style="display:none;">
+					<img src="img/65.jpg" alt="">
+					<img src="img/50.jpg" alt="">
+					<img src="img/29.jpg" alt="">
+					<img src="img/71.jpg" alt="">
+					<img src="img/34.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- end 换肤部分 -->
+
+		<!-- 搜索区域 -->
+		<div class="search-container">
+			<img src="img/bd_logo2.png" alt="百度一下，你就知道" class="baidu-logo" />
+			<img src="img/logo_top_ca79a146.png" title="百度一下，你就知道" class="baidu-logo-s">
+			<form action="https://www.baidu.com/s" method="get" target="_blank" class="search_form" id="search_form">
+				<span class="camera-icon"></span>
+				<input type="text" name="wd" class="search_input" autofocus>
+				<button type="submit">百度一下</button>
+			</form>
+		</div>
+		<!-- end 搜索区域 -->
+		
+		<!-- 选项卡信息部分 -->
+		<div class="tab-container">
+			<div class="tab-title">
+				<span class="mine current">
+					<i class="mine-icon"></i>
+					我的关注
+				</span>
+				<span>推荐</span>
+				<span>导航</span>
+				<span>视频</span>
+				<span>购物</span>
+				<span>奥运</span>
+				<i class="set-icon"></i>
+			</div>
+			<div class="tab-content">
+				<!-- 我的关注 -->
+				<div class="mine-focus">
+					<div class="title">
+						<div class="title-content">
+							<i class="title-icon"></i>
+							<span class="title-text">我的导航</span>
+							<span class="title-num">(11)</span>
+						</div>
+						<div class="setbar">
+							<a href="">添加</a>
+							<a href="">编辑</a>
+							<a href="">
+								<i class="class-icon"></i>
+								分类显示
+							</a>
+							<a href="">
+								<i class="class-icon"></i>
+								返利模式
+							</a>
+							<span class="set-totop">置顶</span>
+						</div>
+					</div><!--end title-->
+					<div class="dir-box">
+						<div>
+							<span class="dir-name">综合</span>
+							<div class="dir-content">
+								<a href="">
+									<img src="img/95491.png"/>
+									<span>百度知道</span>
+								</a>
+								<a href="">
+									<img src="img/80990.png">
+									<span>传智播客</span>
+								</a>
+								<a href="">
+									<img src="img/84933.png">
+									<span>jQuery特效</span>
+								</a>
+								<a href="">
+									<img src="img/9086.png">
+									<span>新东方网络课程</span>
+								</a>
+								<a href="">
+									<img src="img/95490.png">
+									<span>hao123</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<span class="dir-name">社区</span>
+							<div class="dir-content">
+								<a href="">
+									<img src="img/95491.png"/>
+									<span>百度空间</span>
+								</a>
+								<a href="">
+									<img src="img/95488.png">
+									<span>新浪微博</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<span class="dir-name">影视</span>
+							<div class="dir-content">
+								<a href="">
+									<img src="img/2558.png"/>
+									<span>天涯明月刀</span>
+								</a>
+								<a href="">
+									<img src="img/8425.png">
+									<span>风行网</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<span class="dir-name">未分类</span>
+							<div class="dir-content">
+								<a href="">
+									<img src="img/2560.png"/>
+									<span>百度文库</span>
+								</a>
+								<a href="">
+									<img src="img/8322.png">
+									<span>js视频教程</span>
+								</a>
+							</div>
+						</div>
+					</div><!-- end dir-box-->
+					<div class="manager-area">
+						<div class="manager-btn">
+							<i class="btn-icon"></i>
+							<span class="btn-text">自定义</span>
+						</div>
+					</div>
+				</div>
+				<!-- end 我的关注 -->
+				<!-- 推荐 -->
+				<div class="recommend-news">
+					<div class="left-content">
+						<!-- 图片部分 -->
+						<div class="image-banner">
+							<div class="image-top">
+								<img src="img/b7003af33a87e9502f90fa2818385343faf2b4ea.jpg" alt="">
+								<div class="image-desc">
+									<a href=""><h1>中国泳协确认陈欣怡药检阳性</h1></a>
+									<p>陈欣怡已向国际奥委会提交B瓶检测和召开听证会申请</p>
+								</div>
+							</div>
+							<ul>
+								<li>
+									<a href="">
+										<img src="img/42166d224f4a20a4b2d9378398529822730ed0ab.jpg" alt="">
+										<span class="image-bottom-title">宁泽涛的未来在哪</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/e61190ef76c6a7ef3fce0e62f5faaf51f2de668e.jpg" alt="">
+										<span class="image-bottom-title">男篮遭骂该集体枪毙</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/50da81cb39dbb6fd21dcb0620124ab18962b37ea.jpg" alt="">
+										<span class="image-bottom-title">飞鱼22块金牌破记录</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/574e9258d109b3deb61ea52cc4bf6c81810a4cd4.jpg" alt="">
+										<span class="image-bottom-title">揭秘奥运作弊方式</span>
+									</a>
+								</li>
+							</ul>
+						</div><!--end image-banner-->
+						<!-- 新闻列表 -->
+						<div class="news-container">
+							<div class="line-tips">
+								<span class="line"></span>
+								<span class="tips-content">
+									<i class="tips-icon"></i>
+									<em>以下信息根据您的兴趣推荐</em>
+								</span>
+								<span class="line"></span>
+							</div>
+							<!-- end line -->
+							<div class="news-list">
+								<div class="news-item">
+									<h2>
+										<i class="hot-icon"></i>
+										<a href=""> “黄飞鸿”组合夺女子赛艇铜牌 曾获亚运会金牌</a>
+									</h2>
+									<div class="from">
+										<a href="" class="src-net">搜狐体育</a>
+										<span class="src-time">08-13 07:39</span>
+									</div>
+								</div>
+								<div class="news-item">
+									<h2>
+										<a href="">奥运女子双向飞碟 魏萌加时八枪遗憾错失奖牌</a>
+									</h2>
+									<div class="from">
+										<a href="" class="src-net">新浪体育</a>
+										<span class="src-time">08-13 06:29</span>
+									</div>
+								</div>
+								<div class="news-item">
+									<h2>
+										<i class="hot-icon"></i>
+										<a href="">奥运第8日射击看点:张富升冲金牌 李越宏求突破</a>
+									</h2>
+									<div class="from">
+										<a href="" class="src-net">光明网体育频道</a>
+										<span class="src-time">08-13 07:39</span>
+									</div>
+								</div>
+								<div class="news-item">
+									<h2>
+										<a href="">张继科银牌揣兜 呛记者气氛尴尬</a>
+									</h2>
+									<div class="pic-content">
+										<a href="">
+											<img src="img/u=3448863022,4028535837&fm=80.jpg" alt="">
+										</a>
+										<a href="">
+											<img src="img/u=711064103,1139367471&fm=80.jpg" alt="">
+										</a>
+										<a href="">
+											<img src="img/u=1014350882,1041625517&fm=80.jpg" alt="">
+										</a>
+									</div>
+									<div class="from">
+										<a href="" class="src-net">长江网</a>
+										<span class="src-time">08-13 06:33</span>
+									</div>
+								</div>
+								<div class="news-item">
+									<h2>
+										<i class="hot-icon"></i>
+										<a href="">绝无仅有！国乒黄金一代 4位大满贯同战奥运</a>
+									</h2>
+									<div class="from">
+										<a href="" class="src-net">凤凰体育</a>
+										<span class="src-time">08-13 04:30</span>
+									</div>
+								</div>
+								<div class="news-item">
+									<h2>
+										<a href=""> 为一粒米开打 盘点最荒唐的6场战争</a>
+									</h2>
+									<div class="pic-content">
+										<a href="">
+											<img src="img/u=3879399263,152870144&fm=80.jpg" alt="">
+										</a>
+										<a href="">
+											<img src="img/u=4002930829,334738807&fm=80.jpg" alt="">
+										</a>
+										<a href="">
+											<img src="img/u=3707817164,4284625551&fm=80.jpg" alt="">
+										</a>
+									</div>
+									<div class="from">
+										<a href="" class="src-net">长江网</a>
+										<span class="src-time">08-13 06:33</span>
+									</div>
+								</div>
+								<div class="news-item">
+									<h2>
+										<i class="hot-icon"></i>
+										<a href="">气愤!徐莉佳成绩又被取消 奥运会系统未说明原因</a>
+									</h2>
+									<div class="from">
+										<a href="" class="src-net">凤凰体育</a>
+										<span class="src-time">08-13 04:30</span>
+									</div>
+								</div>
+							</div>
+							<!-- end news-list -->
+						</div><!--end news-list-->
+					</div>
+					<!-- end left-content -->
+					<!-- 实时热点 -->
+					<div class="hot-news">
+						<div class="title">
+							<a href="" class="text">实时热点</a>
+							<a href="" class="refresh">
+								<i class="refresh-icon"></i>换一换
+							</a>
+						</div>
+						<ul>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">杜丽宣布退役</a>
+								<i class="new-identity"></i>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">制止行窃被刺身亡</a>
+								<i class="new-identity"></i>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">汪顺200混摘铜</a>
+								<i class="new-identity"></i>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">菲鱼再夺第22金</a>
+								<i class="new-identity"></i>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">帆船名将赛后染病</a>
+								<i class="new-identity"></i>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">李咏现场刁难粉丝</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">闯停机坪赶飞机</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">周海媚与男友分手</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">西瓜价如过山车</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">业绩差员工遭体罚</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">辅警通话救轻生男</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">南京男孩咸猪手</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">官方帮霍顿删评论</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">凤姐呛声王思聪</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">身份证新规出炉</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+							<li>
+								<em class="news-icon"></em>
+								<a href="">刘国梁被批不懂球</a>
+								<div class="detail">
+									<i class="arrow"></i>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 井柏然称聪聪对票房还是很重要 
+										</a>
+									</p>
+									<p class="hot-words-summary">
+										  带着几分“我错过了演青春校园片的时机”的担心,就在井柏然几乎要放弃这类电影时,《微微一笑很倾城》出现了。肖奈这个角色不仅满足了井柏然作为资深网游迷的游戏情结... 
+									</p>
+									<p class="hot-words-item">
+										<i class="dot"></i>
+										<a href="">
+											<em>凤姐呛声王思聪</em>
+											 王思聪被网友痛骂 已经滚下神坛(图)(22) 
+										</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--end hot-news-->
+				</div>
+				<!-- end 推荐 -->
+				<!-- 导航 -->
+				<div class="nav-box">
+					<!-- 猜你喜欢 -->
+					<div class="you-like">
+						<h2>猜你喜欢</h2>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9483.png" alt="">
+									<span class="nav-txt">百度糯米</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end 猜你喜欢 -->
+					<!-- 资讯信息 -->
+					<div class="news">
+						<h2 class="mar-t25 mar-b5 mar-l11">资讯信息</h2>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/dcc451da81cb39db03db4f10d8160924ab183058.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end 资讯信息 -->
+					<!-- 休闲娱乐 -->
+					<div class="yule">
+						<h2 class="mar-t25 mar-b5 mar-l11">休闲娱乐</h2>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/29381f30e924b8995e27517e66061d950a7bf659.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end 休闲娱乐 -->
+					<!-- 购物海淘 -->
+					<div class="taobao">
+						<h2 class="mar-t25 mar-b5 mar-l11">购物海淘</h2>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/9358d109b3de9c825280d0c96481800a18d8438a.jpg" alt="">
+								</a>
+								<div class="rebate">
+									<a href="">最高返利3.54%</a>
+								</div>
+								<div class="fanli-tag">
+									<a href="" target="_blank"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- end 购物海淘 -->
+					<!-- 生活周边 -->
+					<div class="life">
+						<h2 class="mar-t25 mar-b5 mar-l11">生活周边</h2>
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/3ac79f3df8dcd1002550d1677a8b4710b8122fa3.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end 生活周边 -->
+				</div>
+				<!-- end 导航 -->
+				<!-- 视频 -->
+				<div class="video">
+					<div class="video-col">
+						<div class="img-box">
+							<a href="" alt="lol小智">
+								<img src="img/u=3651801094,1060534084&fm=58.jpg" alt="lol小智" title="lol小智">
+							</a>
+							<a href="" class="v-tag" alt="lol小智">08-06期</a>
+							<span class="tag-icon"></span>
+							<a href="" class="add-icon" alt="添加关注"></a>
+							<a href="" class="del-icon" alt="不感兴趣"></a>
+						</div>
+						<div class="info">
+							<a href="" class="text">lol小智</a>
+							<div class="score">
+								<span class="score-star">
+									<span class="star-active" style="width:37.7px"></span>
+								</span>
+								5.8
+							</div>
+						</div>
+					</div>
+					<div class="video-col">
+						<div class="img-box">
+							<a href="" alt="花千骨">
+								<img src="img/u=2537859719,1739918155&fm=58.jpg" alt="花千骨" title="花千骨">
+							</a>
+							<a href="" class="v-tag" alt="花千骨">58集全</a>
+							<span class="tag-icon"></span>
+							<a href="" class="add-icon" alt="添加关注"></a>
+							<a href="" class="del-icon" alt="不感兴趣"></a>
+						</div>
+						<div class="info">
+							<a href="" class="text">花千骨</a>
+							<div class="score">
+								<span class="score-star">
+									<span class="star-active" style="width:37.7px"></span>
+								</span>
+								6.2
+							</div>
+						</div>
+					</div>
+					<div class="video-col">
+						<div class="item">
+							<div class="img-box">
+								<a href="" alt="《家乡二人台》借钱歌_标清">
+									<img src="img/u=458861246,3068520352&fm=58.jpg" alt="《家乡二人台》借钱歌_标清" title="《家乡二人台》借钱歌_标清">
+								</a>
+								<a href="" class="v-tag" alt="《家乡二人台》借钱歌_标清">04:15</a>
+								<a href="" class="add-icon" alt="添加关注"></a>
+								<a href="" class="del-icon" alt="不感兴趣"></a>
+							</div>
+							<div class="info">
+								<a href="" class="text">《家乡二人台》借钱歌_标清</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img-box">
+								<a href="">
+									<img src="img/u=836246383,3343297290&fm=58.jpg">
+								</a>
+								<a href="" class="v-tag" >02:28</a>
+								<a href="" class="add-icon" alt="添加关注"></a>
+								<a href="" class="del-icon" alt="不感兴趣"></a>
+							</div>
+							<div class="info">
+								<a href="" class="text">看宁泽涛的人太多了！不如来湖南万通看小鲜</a>
+							</div>
+						</div>
+					</div>
+					<div class="video-col">
+						<div class="item">
+							<div class="img-box">
+								<a href="" >
+									<img src="img/u=358408350,2287768824&fm=58.jpg">
+								</a>
+								<a href="" class="v-tag" >04:15</a>
+								<a href="" class="add-icon" alt="添加关注"></a>
+								<a href="" class="del-icon" alt="不感兴趣"></a>
+							</div>
+							<div class="info">
+								<a href="" class="text">实拍 悬崖边错车 魔鬼山路简直吓尿了</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img-box">
+								<a href="">
+									<img src="img/u=1679329682,3876866168&fm=58.jpg">
+								</a>
+								<a href="" class="v-tag" >02:28</a>
+								<a href="" class="add-icon" alt="添加关注"></a>
+								<a href="" class="del-icon" alt="不感兴趣"></a>
+							</div>
+							<div class="info">
+								<a href="" class="text">姚笛大谈爱情与婚姻 称只要投入了就理性不了</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end 视频 -->
+				<!-- 购物 -->
+				<div class="shopping">
+					<div class="item">
+						<a href="">
+							<img src="img/ac6eddc451da81cb3dea7b8b5a66d01609243163.jpg" alt="">
+							<div class="mask">
+								<p class="bsTitle">灵剑士头戴耳机</p>
+								<p>
+									<span class="bsTitle">三重折叠</span>
+									<span class="c-r">返利42.5%</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="">
+							<img src="img/8ad4b31c8701a18bb8e7ea09962f07082838fe6c.jpg" alt="">
+							<div class="mask">
+								<p class="bsTitle">苏宁818狂欢节</p>
+								<p>
+									<span class="bsTitle">0利风暴</span>
+									<span class="c-r">全民疯抢</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="">
+							<img src="img/9d82d158ccbf6c819afc91aeb43eb13532fa40a8.jpg" alt="">
+							<div class="mask">
+								<p class="bsTitle">综合图书满减专场</p>
+								<p>
+									<span class="bsTitle">近期好价</span>
+									<span class="c-r">五折封顶</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="" class="bsword">
+							<p>1元得iPhone SE</p>
+							<span>其他超值商品 1元可得</span>
+							<div class="buttondesc">去看看</div>
+						</a>
+						<div class="small">
+							<a href="" class="title">返利商城</a>
+							<ul>
+								<li>
+									<a href="">京东商城</a>
+								</li>
+								<li>
+									<a href="">百度糯米</a>
+								</li>
+								<li>
+									<a href="">1号店</a>
+								</li>
+								<li>
+									<a href="">当当网</a>
+								</li>
+								<li>
+									<a href="">蘑菇街</a>
+								</li>
+								<li>
+									<a href="">唯品会</a>
+								</li>
+								<li>
+									<a href="">聚美优品</a>
+								</li>
+								<li>
+									<a href="">苏宁易购</a>
+								</li>
+								<li>
+									<a href="">国美在线</a>
+								</li>
+								<li class="more">
+									<a href="">更多</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end 购物 -->
+				<!-- 奥运 -->
+				<div class="aoyun">
+					<div class="title">
+						<h2>
+							<i class="icon-logo"></i>2016里约奥运会
+						</h2>
+					</div>
+					<div class="content">
+						<div class="slider-imgs">
+							<ul>
+								<li>
+									<a href="">
+										<img src="img/9f2f070828381f302c5cf5efa1014c086e06f02b.jpg" alt="">
+										<span class="img-title">女子场地自行车中国夺金 </span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="news">
+							<h3 class="top-tit">聚焦头条</h3>
+							<ul>
+								<li>
+									<a href=""> 中国第13金！场地自行车夺首金</a>
+								</li>
+								<li>
+									<a href="">  第12金！男子20公里竞走包揽金银</a>
+								</li>
+								<li>
+									<a href="">  冷门！孙杨无缘1500米自由泳决赛</a>
+								</li>
+								<li>
+									<a href="">  男篮不敌澳大利亚遭4连败</a>
+								</li>
+								<li>
+									<a href="">  中国女足0-1德国止步8强 </a>
+								</li>
+								<li>
+									<a href="">  中国女排0-3塞尔维亚止连胜</a>
+								</li>
+								<li>
+									<a href="">张继科被曝已结婚生子</a>
+								</li>
+							</ul>
+						</div>
+						<div class="rank">
+							<div class="title">
+								<h3>奖牌榜</h3>
+								<a href="">全部榜单</a>
+							</div>
+							<dl class="content">
+								<dt> 
+									<span class="col1">排名</span>
+									<span class="col2">国家</span>
+									<span class="col3">金牌数</span>
+									<span class="col4">银牌数</span>
+									<span class="col5">铜牌数</span>
+									<span class="col6">合计</span>   
+								</dt>
+								<dd> 
+									<span class="col1">1</span>
+									<span class="col2">美国</span>
+									<span class="col3">20</span>
+									<span class="col4">13</span>
+									<span class="col5">17</span>
+									<span class="col6">50</span>   
+								</dd>
+								<dd> 
+									<span class="col1">2</span>
+									<span class="col2">中国</span>
+									<span class="col3">13</span>
+									<span class="col4">10</span>
+									<span class="col5">14</span>
+									<span class="col6">37</span>   
+								</dd>
+								<dd> 
+									<span class="col1">3</span>
+									<span class="col2">英国</span>
+									<span class="col3">7</span>
+									<span class="col4">9</span>
+									<span class="col5">6</span>
+									<span class="col6">22</span>   
+								</dd>
+								<dd> 
+									<span class="col1">4</span>
+									<span class="col2">日本</span>
+									<span class="col3">7</span>
+									<span class="col4">3</span>
+									<span class="col5">14</span>
+									<span class="col6">24</span>   
+								</dd>
+								<dd> 
+									<span class="col1">5</span>
+									<span class="col2">韩国</span>
+									<span class="col3">6</span>
+									<span class="col4">3</span>
+									<span class="col5">4</span>
+									<span class="col6">13</span>   
+								</dd>
+								<dd> 
+									<span class="col1">6</span>
+									<span class="col2">德国</span>
+									<span class="col3">6</span>
+									<span class="col4">3</span>
+									<span class="col5">2</span>
+									<span class="col6">11</span>   
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- end 奥运 -->
+			</div>
+		</div>
+		<!-- end 选项卡信息部分 -->
+
+		<!-- 页脚 -->
+		<footer>
+			<p>
+				<a href="javascript:;" target="_blank">设为首页</a>&nbsp;&nbsp;&nbsp;
+                &copy;2016&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com/">意见反馈</a>&nbsp;京ICP证030173号&nbsp;<i class="f_icon f_icon_logo"></i>
+            </p>
+            <p>
+            	<a href="" class="copyright">
+            		<i class="f_icon f_icon_guoh"></i>京公网安备11000002000001号
+            	</a>
+            </p>
+		</footer>
+		<!-- end footer -->
+
+		<!-- 返回顶部 -->
+		<div id="gotop">
+			<span class="icon"></span>
+			<div class="icon-mark">
+				回到顶部
+			</div>
+		</div>
+		<!-- end gotop -->
+	</div>
+	<!-- end wrapper -->
+
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script type="text/javascript" src="js/index2.js"></script> 
+</body>
+
+</html>
